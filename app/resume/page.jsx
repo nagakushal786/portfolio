@@ -70,9 +70,36 @@ const education = {
   description: "Below is a concise summary of my educational background.",
   items: [
     {
+      institution: "IIITDM Kurnool",
+      course: "B.Tech in CSE",
+      duration: "2022 - 2026"
+    },
+    {
+      institution: "Narayana Junior College",
+      course: "Intermediate in MPC",
+      duration: "2020 - 2022"
+    },
+    {
+      institution: "Narayana Olympiad School",
+      course: "Class 10th",
+      duration: "2019 - 2020"
+    }
+  ]
+}
+
+const certifications = {
+  title: "My Certifications",
+  description: "Below is a concise summary of my certifications.",
+  items: [
+    {
+      institution: "Udemy",
+      course: "Linux",
+      duration: "2025"
+    },
+    {
       institution: "Coding Ninjas",
-      course: "Python programming with DSA",
-      duration: "2023"
+      course: "Advanced frontend with ReactJS",
+      duration: "2024"
     },
     {
       institution: "Coding Ninjas",
@@ -86,18 +113,8 @@ const education = {
     },
     {
       institution: "Coding Ninjas",
-      course: "Advanced frontend with ReactJS",
-      duration: "2024"
-    },
-    {
-      institution: "Udemy",
-      course: "Linux",
-      duration: "2025"
-    },
-    {
-      institution: "IIITDM Kurnool",
-      course: "B.Tech in CSE",
-      duration: "2022 - 2026"
+      course: "Python programming with DSA",
+      duration: "2023"
     }
   ]
 }
@@ -203,6 +220,7 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="certifications">Certifications</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
@@ -234,6 +252,27 @@ const Resume = () => {
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
                     {education.items.map((item, index) => {
+                      return <li key={index}
+                      className="bg-[#232329] h-auto min-h-[184px] py-6 px-6 lg:px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                        <span className="text-accent">{item.duration}</span>
+                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.course}</h3>
+                        <div className="flex items-center gap-3">
+                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <p className="text-white/60">{item.institution}</p>
+                        </div>
+                      </li>
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+            <TabsContent value="certifications" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{certifications.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{certifications.description}</p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {certifications.items.map((item, index) => {
                       return <li key={index}
                       className="bg-[#232329] h-auto min-h-[184px] py-6 px-6 lg:px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                         <span className="text-accent">{item.duration}</span>
