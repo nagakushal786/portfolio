@@ -10,7 +10,7 @@ import MobileNav from "@/components/MobileNav";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
+    <header className="py-4 xl:py-12 text-white">
       <div className="container max-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">
@@ -24,7 +24,7 @@ const Header = () => {
           <Nav />
           <Link href="/contact">
             <button className="bg-accent text-primary px-6 py-3 rounded-full font-semibold hover:bg-accent-hover transition-all">
-              Hire me
+              Let&apos;s Connect
             </button>
           </Link>
         </div>
