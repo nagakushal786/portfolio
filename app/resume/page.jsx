@@ -4,7 +4,6 @@ import { FaHtml5, FaCss3, FaBootstrap, FaJs, FaReact, FaNodeJs, FaBrain } from "
 import { SiTailwindcss, SiNextdotjs, SiLinux, SiNumpy, SiPandas, SiTensorflow, SiPytorch, SiScikitlearn, SiKeras, SiOpencv } from "react-icons/si"
 import { AiOutlineBarChart, AiOutlineBulb } from "react-icons/ai";
 
-
 const about = {
   title: "About me",
   description: "I am a dedicated MERN stack developer and competitive programmer, having completed my B.Tech at IIITDM Kurnool, with a strong focus on building responsive and scalable web applications.",
