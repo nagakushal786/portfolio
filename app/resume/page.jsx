@@ -1,12 +1,50 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaBootstrap, FaJs, FaReact, FaNodeJs, FaBrain } from "react-icons/fa"
-import { SiTailwindcss, SiNextdotjs, SiLinux, SiNumpy, SiPandas, SiTensorflow, SiPytorch, SiScikitlearn, SiKeras, SiOpencv } from "react-icons/si"
-import { AiOutlineBarChart, AiOutlineBulb } from "react-icons/ai";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaDatabase,
+  FaChartArea,
+  FaChartBar,
+  FaChartLine,
+  FaChartPie,
+  FaBrain,
+  FaFilter,
+  FaFileExcel,
+  FaGitAlt,
+} from "react-icons/fa";
+
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiLinux,
+  SiNumpy,
+  SiPandas,
+  SiGo,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiSnowflake,
+  SiGooglebigquery,
+  SiDatabricks,
+  SiApachespark,
+  SiGithub,
+} from "react-icons/si";
+
+import { AiOutlineBulb } from "react-icons/ai";
+
+import { Icon } from "@iconify/react";
+
+import { LuServer } from "react-icons/lu";
 
 const about = {
   title: "About me",
-  description: "I am a dedicated MERN stack developer and competitive programmer, having completed my B.Tech at IIITDM Kurnool, with a strong focus on building responsive and scalable web applications.",
+  description: "I'm a BTech Computer Science graduate who enjoys uncovering insights from data and building useful web applications.",
   info: [
     {
       fieldName: "Name",
@@ -41,6 +79,11 @@ const experience = {
   description: "Below is a concise summary of my professional experience in web development.",
   items: [
     {
+      company: "DRDL",
+      position: "AI and Analytics Intern",
+      duration: "February 2025 - May 2026"
+    },
+    {
       company: "IIIT Bengaluru",
       position: "Backend development Intern",
       duration: "June 2024 - August 2024"
@@ -48,11 +91,6 @@ const experience = {
     {
       company: "Outlier AI",
       position: "Freelancer",
-      duration: "Present"
-    },
-    {
-      company: "NADevs",
-      position: "Full stack web developer Intern",
       duration: "October 2024 - February 2025"
     },
     {
@@ -92,12 +130,27 @@ const certifications = {
   items: [
     {
       institution: "Udemy",
+      course: "Data Analyst Bootcamp from Basics to Advanced",
+      duration: "2026"
+    },
+    {
+      institution: "Udemy",
+      course: "AI Powered Data Analytics Mastery",
+      duration: "2026"
+    },
+    {
+      institution: "Udemy",
+      course: "Backend Engineering with Go",
+      duration: "2026"
+    },
+    {
+      institution: "Udemy",
       course: "Linux",
       duration: "2025"
     },
     {
       institution: "Coding Ninjas",
-      course: "Advanced frontend with ReactJS",
+      course: "Advanced Frontend with ReactJS",
       duration: "2024"
     },
     {
@@ -118,88 +171,77 @@ const certifications = {
   ]
 }
 
+
 const skills = {
   title: "My Skills",
-  description: "Below is a concise summary of my technical skills.",
+  description: "Technologies and tools I use for data analytics and full-stack development.",
+
   items: [
+    // Programming languages
+    { icon: <FaPython />, name: "Python" },
+    { icon: <SiGo />, name: "Go" },
+    { icon: <FaDatabase />, name: "SQL" },
+
+    // Data analytics and visualization
+    { icon: <SiNumpy />, name: "NumPy" },
+    { icon: <SiPandas />, name: "Pandas" },
+    { icon: <FaChartBar />, name: "Matplotlib" },
+    { icon: <FaChartArea />, name: "Seaborn" },
     {
-      icon: <FaHtml5 />,
-      name: "HTML5"
+      icon: <Icon icon="simple-icons:powerbi" />,
+      name: "Power BI"
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS3"
+      icon: <Icon icon="simple-icons:tableau" />,
+      name: "Tableau"
     },
+    { icon: <FaFileExcel />, name: "Excel" },
+    { icon: <FaChartPie />, name: "DAX" },
+    { icon: <FaFilter />, name: "Power Query" },
+    { icon: <FaChartLine />, name: "EDA" },
+    { icon: <FaChartBar />, name: "Statistical Analysis" },
+
+    // Data engineering and cloud
+    { icon: <SiDatabricks />, name: "Databricks" },
+    { icon: <SiApachespark />, name: "PySpark" },
+    { icon: <SiSnowflake />, name: "Snowflake" },
+    { icon: <SiGooglebigquery />, name: "Google BigQuery" },
     {
-      icon: <FaJs />,
-      name: "Javascript"
+      icon: <Icon icon="simple-icons:microsoftazure" />,
+      name: "Microsoft Azure"
     },
+
+    // Databases
+    { icon: <LuServer/>, name: "Microsoft SQL Server" },
+    { icon: <SiMysql />, name: "MySQL" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
+    { icon: <SiMongodb />, name: "MongoDB" },
+
+    // AI and automation
+    { icon: <FaBrain />, name: "Machine Learning" },
+    { icon: <AiOutlineBulb />, name: "Explainable AI (XAI)" },
     {
-      icon: <FaBootstrap />,
-      name: "Bootstrap"
+      icon: <Icon icon="simple-icons:n8n" />,
+      name: "n8n Automation"
     },
-    {
-      icon: <SiTailwindcss />,
-      name: "Tailwind CSS"
-    },
-    {
-      icon: <FaReact />,
-      name: "ReactJS"
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "NextJS"
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "NodeJS"
-    },
-    {
-      icon: <SiLinux />,
-      name: "Linux"
-    },
-    {
-      icon: <SiNumpy />,
-      name: "NumPy"
-    },
-    {
-      icon: <SiPandas />,
-      name: "Pandas"
-    },
-    {
-      icon: <AiOutlineBarChart />,
-      name: "Matplotlib"
-    },
-    {
-      icon: <SiTensorflow />,
-      name: "TensorFlow"
-    },
-    {
-      icon: <SiPytorch />,
-      name: "PyTorch"
-    },
-    {
-      icon: <SiScikitlearn />,
-      name: "Scikit-learn"
-    },
-    {
-      icon: <SiKeras />,
-      name: "Keras"
-    },
-    {
-      icon: <SiOpencv />,
-      name: "OpenCV"
-    },
-    {
-      icon: <FaBrain />,
-      name: "LLMs"
-    },
-    {
-      icon: <AiOutlineBulb />,
-      name: "XAI"
-    }
-  ]
+
+    // Existing frontend skills
+    { icon: <FaHtml5 />, name: "HTML5" },
+    { icon: <FaCss3 />, name: "CSS3" },
+    { icon: <FaJs />, name: "JavaScript" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    { icon: <FaReact />, name: "React.js" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <SiExpress />, name: "Express.js" },
+
+    // Tools and platforms
+    { icon: <SiLinux />, name: "Linux" },
+    { icon: <FaGitAlt />, name: "Git" },
+    { icon: <SiGithub />, name: "GitHub" },
+  ],
 };
+
 
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -244,6 +286,7 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
+
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
@@ -286,30 +329,44 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
+            
             <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                {/* Heading and description */}
+                <div className="flex flex-col gap-[30px]">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {skills.description}
+                  </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.items.map((item, index) => {
-                    return <li key={index}>
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">{item.icon}</div>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="capitalize">{item.name}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
-                  })}
-                </ul>
+
+                {/* Scrollable skills grid */}
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px] pr-4">
+                    {skills.items.map((item, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {item.icon}
+                                </div>
+                              </TooltipTrigger>
+
+                              <TooltipContent>
+                                <p className="capitalize">{item.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
+
             <TabsContent value="about" className="w-full text-center xl:text-left">
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>

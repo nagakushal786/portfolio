@@ -8,7 +8,7 @@ const PageTransition = ({ children }) => {
 
   return (
     <AnimatePresence>
-      <div key={pathname}>
+      <div key={pathname} className="flex-1 min-h-0">
         <motion.div
           initial={{ opacity: 1 }}
           animate={{

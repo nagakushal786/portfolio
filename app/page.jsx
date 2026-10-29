@@ -6,19 +6,19 @@ import Photo from "@/components/Photo";
 
 const Home = () => {
   return (
-    <section className="h-full">
-      <div className="container max-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+    <section className="xl:flex-1 xl:min-h-0 xl:overflow-hidden">
+      <div className="container mx-auto h-full">
+        <div className="flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-10 xl:h-full xl:pt-9">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl mb-1">Fullstack Developer, AI Enthusiast</span>
+            <span className="text-xl mb-1">Data Analyst | Full Stack Developer</span>
             <h1 className="h1">
               Hello I&apos;m <br/> <span className="text-accent">Naga Kushal Vankadara</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 mt-2">
-              I am a passionate MERN stack developer, competitive programmer and an active AI learner, having completed my B.Tech at IIITDM Kurnool, with hands-on experience in ML, Large Language Models (LLMs), Computer Vision, and Explainable AI (XAI).
+              I'm a Computer Science graduate from IIITDM Kurnool who enjoys turning data into insights and building useful web applications. With skills in SQL, Python, Power BI, and full-stack development, I love solving real-world problems through data and technology.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/assets/Kushal_resume.pdf" download="Kushal_resume.pdf">
+              <a href="/assets/Data_Analyst_Resume.pdf" download="kushal_resume.pdf">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                 <span>Download Resume</span>
                 <FiDownload className="text-xl"/>
