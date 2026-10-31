@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/nagakushal786" },
-  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/naga-kushal-vankadara-11117b258/" },
+  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/naga-kushal-vankadara-0559b1248/" },
   { icon: <FaTwitter />, path: "https://x.com/naga_07081507" },
 ];
 
