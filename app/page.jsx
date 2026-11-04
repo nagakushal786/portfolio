@@ -18,7 +18,7 @@ const Home = () => {
               I'm a Computer Science graduate from IIITDM Kurnool who enjoys turning data into insights and building useful web applications. With skills in SQL, Python, Power BI, and full-stack development, I love solving real-world problems through data and technology.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/assets/Data_Analyst_Resume.pdf" download="kushal_resume.pdf">
+              <a href="/assets/resume.pdf" download="resume.pdf">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                 <span>Download Resume</span>
                 <FiDownload className="text-xl"/>
